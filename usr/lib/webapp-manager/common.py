@@ -150,6 +150,9 @@ class WebAppManager():
         browsers.append(Browser(BROWSER_TYPE_CHROMIUM, "Ungoogled Chromium (Flatpak)", "/var/lib/flatpak/exports/bin/com.github.Eloston.UngoogledChromium", "/var/lib/flatpak/exports/bin/com.github.Eloston.UngoogledChromium"))
         browsers.append(Browser(BROWSER_TYPE_CHROMIUM, "Chromium (Flatpak)", "/var/lib/flatpak/exports/bin/org.chromium.Chromium", "/var/lib/flatpak/exports/bin/org.chromium.Chromium"))
         browsers.append(Browser(BROWSER_TYPE_FALKON, "Falkon", "falkon", "/usr/bin/falkon"))
+        
+        browsers.append(Browser(BROWSER_TYPE_CHROMIUM, "Chromium (Flatpak)", "flatpak run org.chromium.Chromium", "/var/lib/flatpak/exports/bin/org.chromium.Chromium"))
+        
         return browsers
 
     def delete_webbapp(self, webapp):
